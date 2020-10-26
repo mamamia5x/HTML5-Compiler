@@ -3,6 +3,8 @@ The one thing I've always wanted to make was a compiler. I first tried with PHP,
 
 My goal is to make it web based, but also work if you download it. The old one worked online, but the site would write it to the same global file.
 
+The Beta site, which is where I test new features, can be found [here](https://HTML-JS-CSS-Compiler.mamamia5x.repl.co).
+
 ## Version History
 #### V.0.1.0
 * Initial Release

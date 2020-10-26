@@ -28,9 +28,15 @@ function fourthload(){
 }
 function fifthload(){
   requirejs(["themes/github"], function(util){
+    sixthload();
+  });
+}
+function sixthload(){
+  requirejs(['helper/brofs'], function(util){
     doneload();
   });
 }
+
 function doneload(){
   document.getElementById("loading").classList.add("hidden");
   document.getElementById("loading").classList.remove("shown");

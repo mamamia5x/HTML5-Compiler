@@ -73,6 +73,8 @@
 #program {
   position: absolute;
   top: 50px;
+  height: calc(100% - 50px);
+  
   left: 50%;
   width: 49%;
 }
