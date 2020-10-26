@@ -1,0 +1,102 @@
+:root {
+  --topbar-color: #000000;
+  --space: #000000;
+}
+
+#loadingImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: initial;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Editor */
+
+#editor { 
+  position: absolute;
+  height: calc(100% - 50px);
+  top: calc(100% - calc(100% - 50px));
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+/* Top Bar */
+#topspace {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 45px;
+  left: 0;
+  background-color: var(--space);
+}
+#topbar {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  top: 0;
+  left: 0;
+  background-color: var(--topbar-color);
+}
+
+/* Separator */
+#separator {
+  position: absolute;
+  z-index: 100;
+  width: 1%;
+  height: calc(100% - 50px);
+  top: calc(100% - calc(100% - 50px));
+  left: 49%;
+  background-color: #24292e;
+}
+
+/* Program */
+#program {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 49%;
+}
+
+/* Run button */
+.runbutton {
+  position: absolute;
+  left: calc(50% - 34.5px);
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:8px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.runbutton:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
