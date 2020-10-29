@@ -1,0 +1,98 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(158, 158, 158); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav button {
+  padding: 6px 8px 6px 16px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav button:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*End W3 Schools */
+
+.left{
+  border-right: 5px solid black;
+}
+.select{
+  border: 1px solid black;
+  background-color: #bfbfbf;
+}
+
+/* Ripped from https://repl.it/talk/share/How-To-Python-Website/38625 ;) */
+a.up {
+	font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+	background-color: #cee0e0;
+	padding: 5px;
+	border: solid;
+	border-color: #cee0e0;
+	border-width: 5px;
+	border-radius: 50px;
+	position: fixed;
+	top: 85%;
+	left: 170px;
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+  z-index: 100;
+}
+
+a.up2{
+ left: 250px;
+}
+
+a.up:hover {
+	background-color: #e1eded;
+  border-color: #e1eded;
+	text-decoration: none;
+}
+
+a.normaltext, a:link, a:visited, a:hover, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.options {
+  color: white;
+  z-index: 200;
+  position: relative;
+  top: 0;
+}
