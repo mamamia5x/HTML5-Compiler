@@ -3,11 +3,7 @@ The one thing I've always wanted to make was a compiler. I first tried with PHP,
 
 The Beta site, which is where I test new features, can be found [here](https://HTML-JS-CSS-Compiler.mamamia5x.repl.co).
 
-<<<<<<< Updated upstream
-The lastest relase, which you can use to download and run the project offline, can be found [here](https://github.com/mamamia5x/HTML5-Compiler/releases).
-=======
 The lastest relase can be found [here](https://github.com/mamamia5x/HTML5-Compiler/releases), but please note that this might not work offline because most computers block the file write system.
->>>>>>> Stashed changes
 
 ## Version History
 #### V.0.2.1
