@@ -112,3 +112,9 @@
 	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
 	background-color:#5cb811;
 }
+
+/* Github Link */
+a#git{
+  color: white;
+  text-decoration: none;
+}

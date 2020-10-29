@@ -23,7 +23,18 @@ function addfile(){
 
 function loadfile(filename){
   currentfile = filename;
-  editor.setValue(localStorage.getItem(filename));
+  localStorage.setItem('currentFileName', currentfile); 
+  localStorage.setItem(currentfile, localStorage.getItem(filename));
+  var filecontent = localStorage.getItem(filename);
+  var setmode = get_url_extension(filename);
+  if (filecontent === null){
+    filecontent = 'Type Something';
+  }
+  if (setmode == 'js'){
+    setmode = 'javascript';
+  }
+  editor.setValue(filecontent);
+  editor.session.setMode("ace/mode/" + setmode);
   document.getElementById("maker").classList.toggle("hidden");
   document.getElementById("addButton").classList.toggle("hidden");
 }
