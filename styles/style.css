@@ -2,7 +2,12 @@
   --topbar-color: #000000;
   --space: #000000;
 }
+/* Change Mouse */
+.mouse {
+  cursor: pointer;
+}
 
+/* Loading Bar */
 #loadingImg {
   position: absolute;
   top: 50%;
@@ -41,6 +46,10 @@
 }
 
 /* Top Bar */
+.topmargin {
+  position: absolute;
+  top: 10px;
+}
 #topspace {
   position: absolute;
   width: 100%;
@@ -73,6 +82,8 @@
 #program {
   position: absolute;
   top: 50px;
+  height: calc(100% - 50px);
+  
   left: 50%;
   width: 49%;
 }
@@ -81,6 +92,7 @@
 .runbutton {
   position: absolute;
   left: calc(50% - 34.5px);
+  top: 10px;
 	box-shadow:inset 0px 1px 0px 0px #caefab;
 	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
 	background-color:#77d42a;

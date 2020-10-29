@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width">
     <title>HTML5 Compiler</title>
     <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="styles/fontawesome.css" rel="stylesheet" type="text/css" />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/sidebar.css" rel="stylesheet" type="text/css" />
   </head>
-  <!-- 24292e -->
-  <div id="loading" class="shown"><img id="loadingImg" src='img/loading.gif'></div>
-  <div id='toload' class="hidden">
-    <div style="color: white" id="topbar">
-      <button onclick="run ()" class='runbutton'>Run</button>
-    </div>
-    <div id="program"></div>
-    <div id="separator"></div>
-    <div id="topspace"></div>
-    <div id="editor"></div>
-  </div>
   <body>
+    <div id="loading" class="shown"><img id="loadingImg" src='img/loading.gif'></div>
+    <div id='toload' class="hidden">
+      <i onclick="sidebar()" class="fa fa-bars options mouse"></i>
+      <i onclick='addfile()' id="addButton" class="hidden fa fa-plus options mouse"></i>
+      <div style="color: white" id="topbar">
+        <div class='topmargin'>
+          <!-- Unused for now -->
+        </div>
+        <button onclick="run ()" class='runbutton'>Run</button>
+
+        <!-- Side bar tools, from another project -->
+        <div id="maker" class="hidden">
+          <div id="tools" class="sidenav left">
+            <br>
+            <button onclick="loadfile(this.innerText)" class="mouse select">index.html</button>
+            <!-- The first file is index.html --> 
+            <div id="afterFirst">
+            </div>
+          </div>
+        </div>
+        <!-- End Side Bar --> 
+      </div>
+      <iframe frameBorder="0" id="program"></iframe>
+      <div id="separator"></div>
+      <div id="topspace"></div>
+      <div id="editor"></div>
+    </div>
     <script data-main="scripts/startup" src="scripts/require.js"></script>
   </body>
 </html>
