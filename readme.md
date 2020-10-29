@@ -5,7 +5,7 @@ My goal is to make it web based, but also work if you download it. The old one w
 
 The Beta site, which is where I test new features, can be found [here](https://HTML-JS-CSS-Compiler.mamamia5x.repl.co).
 
-The lastest relase, which you can use to download and run the project offline, can be found [https://github.com/mamamia5x/HTML5-Compiler/releases](here)
+The lastest relase, which you can use to download and run the project offline, can be found [here](https://github.com/mamamia5x/HTML5-Compiler/releases).
 
 ## Version History
 #### V.0.2.0
